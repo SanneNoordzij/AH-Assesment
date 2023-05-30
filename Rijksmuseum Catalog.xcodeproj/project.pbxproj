@@ -1,0 +1,756 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		88403ED32A2656C600707551 /* JSONMockReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88403ED22A2656C600707551 /* JSONMockReader.swift */; };
+		88403ED72A26574100707551 /* CatalogResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 88403ED52A26574100707551 /* CatalogResponse.json */; };
+		88403ED82A26574100707551 /* CatalogDetailResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 88403ED62A26574100707551 /* CatalogDetailResponse.json */; };
+		88403EDA2A26576A00707551 /* CatalogAPIMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88403ED92A26576A00707551 /* CatalogAPIMock.swift */; };
+		88403EDE2A2657FA00707551 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 88403EDD2A2657FA00707551 /* SDWebImage */; };
+		88403EE02A2657FE00707551 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 88403EDF2A2657FE00707551 /* SnapKit */; };
+		88403EE22A26588400707551 /* CatalogRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88403EE12A26588400707551 /* CatalogRepositoryMock.swift */; };
+		88403EE42A265A9300707551 /* XCTestCase+Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88403EE32A265A9300707551 /* XCTestCase+Combine.swift */; };
+		88403EE62A265BE100707551 /* CatalogRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88403EE52A265BE100707551 /* CatalogRepositoryTests.swift */; };
+		8890870C2A263FD700C447FF /* SectionHeaderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8890870B2A263FD700C447FF /* SectionHeaderCollectionViewCell.swift */; };
+		88DA44922A248AF20077D77C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA44912A248AF20077D77C /* AppDelegate.swift */; };
+		88DA44942A248AF20077D77C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA44932A248AF20077D77C /* SceneDelegate.swift */; };
+		88DA449B2A248AF30077D77C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88DA449A2A248AF30077D77C /* Assets.xcassets */; };
+		88DA449E2A248AF30077D77C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88DA449C2A248AF30077D77C /* LaunchScreen.storyboard */; };
+		88DA44A92A248AF30077D77C /* CatalogOverviewViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA44A82A248AF30077D77C /* CatalogOverviewViewModelTests.swift */; };
+		88DA44C62A248B940077D77C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA44C52A248B940077D77C /* Coordinator.swift */; };
+		88DA44C82A248BA30077D77C /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA44C72A248BA30077D77C /* AppCoordinator.swift */; };
+		88DA44CB2A248C540077D77C /* CatalogOverviewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA44CA2A248C540077D77C /* CatalogOverviewCoordinator.swift */; };
+		88DA44CD2A248C5E0077D77C /* CatalogOverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA44CC2A248C5E0077D77C /* CatalogOverviewViewController.swift */; };
+		88DA44CF2A248C680077D77C /* CatalogOverviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA44CE2A248C680077D77C /* CatalogOverviewViewModel.swift */; };
+		88DA44D22A248E590077D77C /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 88DA44D12A248E590077D77C /* SnapKit */; };
+		88DA44D62A248F340077D77C /* CatalogRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA44D52A248F340077D77C /* CatalogRepository.swift */; };
+		88DA44D82A248F410077D77C /* CatalogAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA44D72A248F410077D77C /* CatalogAPI.swift */; };
+		88DA44DA2A2490DD0077D77C /* CatalogResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA44D92A2490DD0077D77C /* CatalogResponse.swift */; };
+		88DA44DC2A2490EB0077D77C /* ArtObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA44DB2A2490EB0077D77C /* ArtObject.swift */; };
+		88DA44E22A2497270077D77C /* CatalogItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA44E12A2497270077D77C /* CatalogItem.swift */; };
+		88DA44E62A249B970077D77C /* CatalogItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA44E52A249B970077D77C /* CatalogItemCollectionViewCell.swift */; };
+		88DA44E92A24A6900077D77C /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 88DA44E82A24A6900077D77C /* SDWebImage */; };
+		88DA44EB2A24E3DD0077D77C /* ItemLoadingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA44EA2A24E3DD0077D77C /* ItemLoadingCollectionViewCell.swift */; };
+		88DA44EE2A24EA5B0077D77C /* ArtObjectDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA44ED2A24EA5B0077D77C /* ArtObjectDetailViewModel.swift */; };
+		88DA44F02A24EA630077D77C /* ArtObjectDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA44EF2A24EA630077D77C /* ArtObjectDetailViewController.swift */; };
+		88DA44F22A24EA6D0077D77C /* ArtObjectDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA44F12A24EA6D0077D77C /* ArtObjectDetailCoordinator.swift */; };
+		88DA44F42A24EC4E0077D77C /* CatalogDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA44F32A24EC4E0077D77C /* CatalogDetailResponse.swift */; };
+		88DA44F62A24ED640077D77C /* ArtObjectImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA44F52A24ED640077D77C /* ArtObjectImage.swift */; };
+		88DA44FA2A24EEDE0077D77C /* ArtObjectDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA44F92A24EEDE0077D77C /* ArtObjectDetails.swift */; };
+		88DA44FC2A24F1580077D77C /* CatalogItemDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA44FB2A24F1580077D77C /* CatalogItemDetails.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		88DA44A52A248AF30077D77C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88DA44862A248AF20077D77C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88DA448D2A248AF20077D77C;
+			remoteInfo = "Rijksmuseum Catalog";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		88403ED22A2656C600707551 /* JSONMockReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONMockReader.swift; sourceTree = "<group>"; };
+		88403ED52A26574100707551 /* CatalogResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CatalogResponse.json; sourceTree = "<group>"; };
+		88403ED62A26574100707551 /* CatalogDetailResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CatalogDetailResponse.json; sourceTree = "<group>"; };
+		88403ED92A26576A00707551 /* CatalogAPIMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogAPIMock.swift; sourceTree = "<group>"; };
+		88403EE12A26588400707551 /* CatalogRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogRepositoryMock.swift; sourceTree = "<group>"; };
+		88403EE32A265A9300707551 /* XCTestCase+Combine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Combine.swift"; sourceTree = "<group>"; };
+		88403EE52A265BE100707551 /* CatalogRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogRepositoryTests.swift; sourceTree = "<group>"; };
+		8890870B2A263FD700C447FF /* SectionHeaderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderCollectionViewCell.swift; sourceTree = "<group>"; };
+		88DA448E2A248AF20077D77C /* Rijksmuseum Catalog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rijksmuseum Catalog.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		88DA44912A248AF20077D77C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		88DA44932A248AF20077D77C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		88DA449A2A248AF30077D77C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		88DA449D2A248AF30077D77C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		88DA449F2A248AF30077D77C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88DA44A42A248AF30077D77C /* Rijksmuseum CatalogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rijksmuseum CatalogTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		88DA44A82A248AF30077D77C /* CatalogOverviewViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogOverviewViewModelTests.swift; sourceTree = "<group>"; };
+		88DA44C52A248B940077D77C /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		88DA44C72A248BA30077D77C /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		88DA44CA2A248C540077D77C /* CatalogOverviewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogOverviewCoordinator.swift; sourceTree = "<group>"; };
+		88DA44CC2A248C5E0077D77C /* CatalogOverviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogOverviewViewController.swift; sourceTree = "<group>"; };
+		88DA44CE2A248C680077D77C /* CatalogOverviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogOverviewViewModel.swift; sourceTree = "<group>"; };
+		88DA44D52A248F340077D77C /* CatalogRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogRepository.swift; sourceTree = "<group>"; };
+		88DA44D72A248F410077D77C /* CatalogAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogAPI.swift; sourceTree = "<group>"; };
+		88DA44D92A2490DD0077D77C /* CatalogResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogResponse.swift; sourceTree = "<group>"; };
+		88DA44DB2A2490EB0077D77C /* ArtObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtObject.swift; sourceTree = "<group>"; };
+		88DA44E12A2497270077D77C /* CatalogItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogItem.swift; sourceTree = "<group>"; };
+		88DA44E52A249B970077D77C /* CatalogItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		88DA44EA2A24E3DD0077D77C /* ItemLoadingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemLoadingCollectionViewCell.swift; sourceTree = "<group>"; };
+		88DA44ED2A24EA5B0077D77C /* ArtObjectDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtObjectDetailViewModel.swift; sourceTree = "<group>"; };
+		88DA44EF2A24EA630077D77C /* ArtObjectDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtObjectDetailViewController.swift; sourceTree = "<group>"; };
+		88DA44F12A24EA6D0077D77C /* ArtObjectDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtObjectDetailCoordinator.swift; sourceTree = "<group>"; };
+		88DA44F32A24EC4E0077D77C /* CatalogDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogDetailResponse.swift; sourceTree = "<group>"; };
+		88DA44F52A24ED640077D77C /* ArtObjectImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtObjectImage.swift; sourceTree = "<group>"; };
+		88DA44F92A24EEDE0077D77C /* ArtObjectDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtObjectDetails.swift; sourceTree = "<group>"; };
+		88DA44FB2A24F1580077D77C /* CatalogItemDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogItemDetails.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		88DA448B2A248AF20077D77C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88DA44E92A24A6900077D77C /* SDWebImage in Frameworks */,
+				88DA44D22A248E590077D77C /* SnapKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88DA44A12A248AF30077D77C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88403EDE2A2657FA00707551 /* SDWebImage in Frameworks */,
+				88403EE02A2657FE00707551 /* SnapKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		88403ECE2A26569700707551 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				88403ED22A2656C600707551 /* JSONMockReader.swift */,
+				88403EE32A265A9300707551 /* XCTestCase+Combine.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		88403ED42A2656D500707551 /* JSON Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				88403ED62A26574100707551 /* CatalogDetailResponse.json */,
+				88403ED52A26574100707551 /* CatalogResponse.json */,
+			);
+			path = "JSON Mocks";
+			sourceTree = "<group>";
+		};
+		88403EDB2A26578C00707551 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				88403ED92A26576A00707551 /* CatalogAPIMock.swift */,
+				88403EE12A26588400707551 /* CatalogRepositoryMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		88403EDC2A2657FA00707551 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		88DA44852A248AF20077D77C = {
+			isa = PBXGroup;
+			children = (
+				88DA44902A248AF20077D77C /* Rijksmuseum Catalog */,
+				88DA44A72A248AF30077D77C /* Rijksmuseum CatalogTests */,
+				88DA448F2A248AF20077D77C /* Products */,
+				88403EDC2A2657FA00707551 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		88DA448F2A248AF20077D77C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				88DA448E2A248AF20077D77C /* Rijksmuseum Catalog.app */,
+				88DA44A42A248AF30077D77C /* Rijksmuseum CatalogTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		88DA44902A248AF20077D77C /* Rijksmuseum Catalog */ = {
+			isa = PBXGroup;
+			children = (
+				88DA44C22A248B3C0077D77C /* Data */,
+				88DA44C32A248B420077D77C /* UI */,
+				88DA44912A248AF20077D77C /* AppDelegate.swift */,
+				88DA44932A248AF20077D77C /* SceneDelegate.swift */,
+				88DA449A2A248AF30077D77C /* Assets.xcassets */,
+				88DA449C2A248AF30077D77C /* LaunchScreen.storyboard */,
+				88DA449F2A248AF30077D77C /* Info.plist */,
+			);
+			path = "Rijksmuseum Catalog";
+			sourceTree = "<group>";
+		};
+		88DA44A72A248AF30077D77C /* Rijksmuseum CatalogTests */ = {
+			isa = PBXGroup;
+			children = (
+				88403EDB2A26578C00707551 /* Mocks */,
+				88403ED42A2656D500707551 /* JSON Mocks */,
+				88403ECE2A26569700707551 /* Util */,
+				88DA44A82A248AF30077D77C /* CatalogOverviewViewModelTests.swift */,
+				88403EE52A265BE100707551 /* CatalogRepositoryTests.swift */,
+			);
+			path = "Rijksmuseum CatalogTests";
+			sourceTree = "<group>";
+		};
+		88DA44C22A248B3C0077D77C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				88DA44D32A248EE50077D77C /* Catalog */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		88DA44C32A248B420077D77C /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				88DA44EC2A24EA400077D77C /* ArtObject Detail */,
+				88DA44C92A248C3E0077D77C /* Catalog Overview */,
+				88DA44C42A248B5B0077D77C /* Generic */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		88DA44C42A248B5B0077D77C /* Generic */ = {
+			isa = PBXGroup;
+			children = (
+				88DA44C52A248B940077D77C /* Coordinator.swift */,
+				88DA44C72A248BA30077D77C /* AppCoordinator.swift */,
+			);
+			path = Generic;
+			sourceTree = "<group>";
+		};
+		88DA44C92A248C3E0077D77C /* Catalog Overview */ = {
+			isa = PBXGroup;
+			children = (
+				88DA44E42A249B860077D77C /* Views */,
+				88DA44CA2A248C540077D77C /* CatalogOverviewCoordinator.swift */,
+				88DA44CC2A248C5E0077D77C /* CatalogOverviewViewController.swift */,
+				88DA44CE2A248C680077D77C /* CatalogOverviewViewModel.swift */,
+			);
+			path = "Catalog Overview";
+			sourceTree = "<group>";
+		};
+		88DA44D32A248EE50077D77C /* Catalog */ = {
+			isa = PBXGroup;
+			children = (
+				88DA44E02A2497130077D77C /* Repository */,
+				88DA44DF2A2497030077D77C /* API */,
+			);
+			path = Catalog;
+			sourceTree = "<group>";
+		};
+		88DA44D42A248F1E0077D77C /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				88DA44D92A2490DD0077D77C /* CatalogResponse.swift */,
+				88DA44F32A24EC4E0077D77C /* CatalogDetailResponse.swift */,
+				88DA44DB2A2490EB0077D77C /* ArtObject.swift */,
+				88DA44F92A24EEDE0077D77C /* ArtObjectDetails.swift */,
+				88DA44F52A24ED640077D77C /* ArtObjectImage.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		88DA44DF2A2497030077D77C /* API */ = {
+			isa = PBXGroup;
+			children = (
+				88DA44D72A248F410077D77C /* CatalogAPI.swift */,
+				88DA44D42A248F1E0077D77C /* Entities */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		88DA44E02A2497130077D77C /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				88DA44E32A2497340077D77C /* Entities */,
+				88DA44D52A248F340077D77C /* CatalogRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		88DA44E32A2497340077D77C /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				88DA44E12A2497270077D77C /* CatalogItem.swift */,
+				88DA44FB2A24F1580077D77C /* CatalogItemDetails.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		88DA44E42A249B860077D77C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				88DA44E52A249B970077D77C /* CatalogItemCollectionViewCell.swift */,
+				88DA44EA2A24E3DD0077D77C /* ItemLoadingCollectionViewCell.swift */,
+				8890870B2A263FD700C447FF /* SectionHeaderCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		88DA44EC2A24EA400077D77C /* ArtObject Detail */ = {
+			isa = PBXGroup;
+			children = (
+				88DA44ED2A24EA5B0077D77C /* ArtObjectDetailViewModel.swift */,
+				88DA44EF2A24EA630077D77C /* ArtObjectDetailViewController.swift */,
+				88DA44F12A24EA6D0077D77C /* ArtObjectDetailCoordinator.swift */,
+			);
+			path = "ArtObject Detail";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		88DA448D2A248AF20077D77C /* Rijksmuseum Catalog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88DA44B82A248AF30077D77C /* Build configuration list for PBXNativeTarget "Rijksmuseum Catalog" */;
+			buildPhases = (
+				88DA448A2A248AF20077D77C /* Sources */,
+				88DA448B2A248AF20077D77C /* Frameworks */,
+				88DA448C2A248AF20077D77C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Rijksmuseum Catalog";
+			packageProductDependencies = (
+				88DA44D12A248E590077D77C /* SnapKit */,
+				88DA44E82A24A6900077D77C /* SDWebImage */,
+			);
+			productName = "Rijksmuseum Catalog";
+			productReference = 88DA448E2A248AF20077D77C /* Rijksmuseum Catalog.app */;
+			productType = "com.apple.product-type.application";
+		};
+		88DA44A32A248AF30077D77C /* Rijksmuseum CatalogTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88DA44BB2A248AF30077D77C /* Build configuration list for PBXNativeTarget "Rijksmuseum CatalogTests" */;
+			buildPhases = (
+				88DA44A02A248AF30077D77C /* Sources */,
+				88DA44A12A248AF30077D77C /* Frameworks */,
+				88DA44A22A248AF30077D77C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88DA44A62A248AF30077D77C /* PBXTargetDependency */,
+			);
+			name = "Rijksmuseum CatalogTests";
+			packageProductDependencies = (
+				88403EDD2A2657FA00707551 /* SDWebImage */,
+				88403EDF2A2657FE00707551 /* SnapKit */,
+			);
+			productName = "Rijksmuseum CatalogTests";
+			productReference = 88DA44A42A248AF30077D77C /* Rijksmuseum CatalogTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		88DA44862A248AF20077D77C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					88DA448D2A248AF20077D77C = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					88DA44A32A248AF30077D77C = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 88DA448D2A248AF20077D77C;
+					};
+				};
+			};
+			buildConfigurationList = 88DA44892A248AF20077D77C /* Build configuration list for PBXProject "Rijksmuseum Catalog" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 88DA44852A248AF20077D77C;
+			packageReferences = (
+				88DA44D02A248E590077D77C /* XCRemoteSwiftPackageReference "SnapKit" */,
+				88DA44E72A24A6900077D77C /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
+			productRefGroup = 88DA448F2A248AF20077D77C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				88DA448D2A248AF20077D77C /* Rijksmuseum Catalog */,
+				88DA44A32A248AF30077D77C /* Rijksmuseum CatalogTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		88DA448C2A248AF20077D77C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88DA449E2A248AF30077D77C /* LaunchScreen.storyboard in Resources */,
+				88DA449B2A248AF30077D77C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88DA44A22A248AF30077D77C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88403ED72A26574100707551 /* CatalogResponse.json in Resources */,
+				88403ED82A26574100707551 /* CatalogDetailResponse.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		88DA448A2A248AF20077D77C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88DA44F62A24ED640077D77C /* ArtObjectImage.swift in Sources */,
+				88DA44CB2A248C540077D77C /* CatalogOverviewCoordinator.swift in Sources */,
+				88DA44CF2A248C680077D77C /* CatalogOverviewViewModel.swift in Sources */,
+				88DA44EE2A24EA5B0077D77C /* ArtObjectDetailViewModel.swift in Sources */,
+				88DA44EB2A24E3DD0077D77C /* ItemLoadingCollectionViewCell.swift in Sources */,
+				88DA44CD2A248C5E0077D77C /* CatalogOverviewViewController.swift in Sources */,
+				88DA44F22A24EA6D0077D77C /* ArtObjectDetailCoordinator.swift in Sources */,
+				88DA44D82A248F410077D77C /* CatalogAPI.swift in Sources */,
+				88DA44DA2A2490DD0077D77C /* CatalogResponse.swift in Sources */,
+				88DA44C62A248B940077D77C /* Coordinator.swift in Sources */,
+				88DA44F42A24EC4E0077D77C /* CatalogDetailResponse.swift in Sources */,
+				88DA44E22A2497270077D77C /* CatalogItem.swift in Sources */,
+				88DA44DC2A2490EB0077D77C /* ArtObject.swift in Sources */,
+				88DA44C82A248BA30077D77C /* AppCoordinator.swift in Sources */,
+				88DA44FA2A24EEDE0077D77C /* ArtObjectDetails.swift in Sources */,
+				8890870C2A263FD700C447FF /* SectionHeaderCollectionViewCell.swift in Sources */,
+				88DA44E62A249B970077D77C /* CatalogItemCollectionViewCell.swift in Sources */,
+				88DA44D62A248F340077D77C /* CatalogRepository.swift in Sources */,
+				88DA44922A248AF20077D77C /* AppDelegate.swift in Sources */,
+				88DA44FC2A24F1580077D77C /* CatalogItemDetails.swift in Sources */,
+				88DA44F02A24EA630077D77C /* ArtObjectDetailViewController.swift in Sources */,
+				88DA44942A248AF20077D77C /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88DA44A02A248AF30077D77C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88403EDA2A26576A00707551 /* CatalogAPIMock.swift in Sources */,
+				88403EE42A265A9300707551 /* XCTestCase+Combine.swift in Sources */,
+				88403ED32A2656C600707551 /* JSONMockReader.swift in Sources */,
+				88403EE62A265BE100707551 /* CatalogRepositoryTests.swift in Sources */,
+				88DA44A92A248AF30077D77C /* CatalogOverviewViewModelTests.swift in Sources */,
+				88403EE22A26588400707551 /* CatalogRepositoryMock.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		88DA44A62A248AF30077D77C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88DA448D2A248AF20077D77C /* Rijksmuseum Catalog */;
+			targetProxy = 88DA44A52A248AF30077D77C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		88DA449C2A248AF30077D77C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88DA449D2A248AF30077D77C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		88DA44B62A248AF30077D77C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		88DA44B72A248AF30077D77C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		88DA44B92A248AF30077D77C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Rijksmuseum Catalog/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dotfx.Rijksmuseum-Catalog";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		88DA44BA2A248AF30077D77C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Rijksmuseum Catalog/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dotfx.Rijksmuseum-Catalog";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		88DA44BC2A248AF30077D77C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dotfx.Rijksmuseum-CatalogTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rijksmuseum Catalog.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Rijksmuseum Catalog";
+			};
+			name = Debug;
+		};
+		88DA44BD2A248AF30077D77C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dotfx.Rijksmuseum-CatalogTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rijksmuseum Catalog.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Rijksmuseum Catalog";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		88DA44892A248AF20077D77C /* Build configuration list for PBXProject "Rijksmuseum Catalog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88DA44B62A248AF30077D77C /* Debug */,
+				88DA44B72A248AF30077D77C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88DA44B82A248AF30077D77C /* Build configuration list for PBXNativeTarget "Rijksmuseum Catalog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88DA44B92A248AF30077D77C /* Debug */,
+				88DA44BA2A248AF30077D77C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88DA44BB2A248AF30077D77C /* Build configuration list for PBXNativeTarget "Rijksmuseum CatalogTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88DA44BC2A248AF30077D77C /* Debug */,
+				88DA44BD2A248AF30077D77C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		88DA44D02A248E590077D77C /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		88DA44E72A24A6900077D77C /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		88403EDD2A2657FA00707551 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 88DA44E72A24A6900077D77C /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		88403EDF2A2657FE00707551 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 88DA44D02A248E590077D77C /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		88DA44D12A248E590077D77C /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 88DA44D02A248E590077D77C /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		88DA44E82A24A6900077D77C /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 88DA44E72A24A6900077D77C /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 88DA44862A248AF20077D77C /* Project object */;
+}
